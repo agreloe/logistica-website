@@ -1,0 +1,11 @@
+@import 'Variables';
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    background-color: $primaryColor !important;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
+}

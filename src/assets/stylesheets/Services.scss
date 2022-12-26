@@ -1,0 +1,115 @@
+@import 'Variables';
+.services {
+    &__title {
+        padding: 4em 0px;
+    }
+
+    &__cards {
+        margin-bottom: 4rem;
+    }
+
+    &__cards,
+    &__title {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+
+    .card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        width: 100%;
+        gap: 1rem;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+        &__content {
+            padding: 0px 1rem;
+        }
+
+        &:nth-child(3n),
+        &:last-child {
+
+            .card__img {
+                order: 1;
+            }
+        }
+
+        &__img {
+            width: 250px;
+            height: 250px;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+        }
+    }
+
+    @include small-screen {
+        &__cards,
+        &__title {
+            grid-template-columns: 1fr;
+        }
+
+        .card {
+            flex-wrap: wrap;
+            text-align: center;
+
+            &__img {
+                width: 100%;
+                object-fit: cover;
+            }
+
+            &__content {
+                margin-bottom: 1rem;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+
+                &__img {
+                    width: 64px;
+                    height: 100%;
+                }
+
+                &__text {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: left;
+                }
+            }
+
+            &:nth-child(odd) {
+                .card__img {
+                    order: 0;
+                }
+            }
+
+            &:last-child {
+                .card__img {
+                    order: 0;
+                }
+            }
+        }
+    }
+
+    @include medium-screen {
+        &__cards,
+        &__title {
+            grid-template-columns: 1fr;
+        }
+
+        .card {
+            &:nth-child(odd) {
+                .card__img {
+                    order: 2;
+                }
+            }
+
+            &:last-child {
+                .card__img {
+                    order: 0;
+                }
+            }
+        }
+    }
+
+}

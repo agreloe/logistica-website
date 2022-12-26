@@ -1,0 +1,41 @@
+// Variables
+$navHeight: 64px;
+$smallCarouselHeight: 50vh;
+$primaryColor: 	hsl(19, 100%, 54%);
+
+// TypeScale
+$header1: 2.652rem;
+$header2: 2.441rem;
+$header3: 1.953rem;
+$header4: 1.563rem;
+$header5: 1.25rem;
+$paragraph: 1rem;
+$header1Mobile: 1.953rem;
+$header2Mobile: 1.563rem;
+$header3Mobile: 1.25rem;
+
+
+// Media Querys
+@mixin small-screen {
+  @media (max-width: 767.98px) {
+      @content;
+  }
+}
+
+@mixin medium-screen {
+  @media (min-width: 768px) and (max-width: 990px) {
+      @content;
+  }
+}
+
+@mixin large-screen {
+  @media (min-width: 1440px) {
+      @content;
+  }
+}
+
+@mixin xl-screen {
+  @media (min-width: 1921px) {
+      @content;
+  }
+}

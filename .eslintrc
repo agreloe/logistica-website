@@ -1,0 +1,92 @@
+{
+    "root": true,
+    "env": {
+      "commonjs": true,
+      "node": true,
+      "browser": true,
+      "es6": true
+    },
+    "plugins": ["import", "jsx-a11y", "prettier", "react"],
+    "parser": "@babel/eslint-parser",
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 6,
+      "requireConfigFile": false,
+      "sourceType": "module"
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:import/errors",
+      "plugin:import/warnings",
+      "plugin:react/recommended",
+      "plugin:jsx-a11y/recommended",
+      "airbnb",
+      "prettier"
+    ],
+    "rules": {
+      "arrow-body-style": "off",
+      "camelcase": 1,
+      "comma-dangle": [0, "always-multiline"],
+      "consistent-return": 1,
+      "default-param-last": 1,
+      "global-require": 0,
+      "import/prefer-default-export": "off",
+      "import/no-absolute-path": 2,
+      "import/no-named-as-default-member": 1,
+      "import/no-extraneous-dependencies": 0,
+      "import/no-useless-path-segments": 0,
+      "import/extensions": 0,
+      "import/order": 0,
+      "jsx-a11y/anchor-is-valid": "off",
+      "jsx-a11y/alt-text": 0,
+      "jsx-a11y/img-redundant-alt": 0,
+      "no-alert": 0,
+      "no-console": 0,
+      "no-use-before-define": 0,
+      "no-undef": 1,
+      "no-non-null-assertion": 0,
+      "no-unused-vars": 1,
+      "no-underscore-dangle": 1,
+      "no-unused-expressions": 1,
+      "no-var-requires": 0,
+      "no-useless-return": 1,
+      "no-unneeded-ternary": 1,
+      "no-tabs": 1,
+      "prefer-destructuring": [
+        1,
+        { "array": false, "object": false },
+        { "enforceForRenamedProperties": false }
+      ],
+      "prefer-object-spread": 0, // until node 8 is required
+      "prefer-rest-params": 0, // until node 6 is required
+      "prefer-spread": 0, // until node 6 is required
+      "prefer-template": 1,
+      "prefer-promise-reject-errors": 1,
+      // "prettier/prettier": ["error"],
+      "react/function-component-definition": 0,
+      "react/destructuring-assignment": 1,
+      "react/jsx-no-useless-fragment": 1,
+      "react/jsx-boolean-value": 0,
+      "react/jsx-curly-brace-presence": 1,
+      "react/jsx-props-no-spreading": 0,
+      "react/jsx-no-duplicate-props": 0,
+      "react/jsx-one-expression-per-line": 0,
+      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+      "react/no-array-index-key": 0,
+      "react/no-unescaped-entities": 1,
+      "react/prop-types": "off",
+      "react/require-default-props": 0,
+      "react/self-closing-comp": 0,
+      "semi": [1, "always"],
+      "space-before-function-paren": 1,
+      "spaced-comment": 0
+    },
+    "ignorePatterns": [
+      "getEnv.js",
+      ".eslintrc",
+      "webpack.dev.js",
+      "webpack.prod.js"
+    ]
+  }

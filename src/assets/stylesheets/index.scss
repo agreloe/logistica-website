@@ -1,0 +1,52 @@
+@import 'Variables';
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 !important;
+    overflow-x: hidden;
+    overscroll-behavior: none;
+
+    ul {
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 0px;
+      }
+
+      h1,h2,h3,h4,h5,h6,p{
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+      }
+
+    .MuiTypography-h1 {
+        font-size: $header1 !important;
+      }
+      .MuiTypography-h2 {
+        font-size: $header2 !important;
+      }
+      .MuiTypography-h3 {
+        font-size: $header3 !important;
+      }
+      .MuiTypography-h4 {
+        font-size: $header4 !important;
+      }
+      .MuiTypography-h5 {
+        font-size: $header5 !important;
+      }
+
+      @include small-screen {
+        .MuiTypography-h1 {
+          font-size: $header1Mobile !important;
+        }
+        .MuiTypography-h2 {
+          font-size: $header2Mobile !important;
+        }
+        .MuiTypography-h3 {
+          font-size: $header3Mobile !important;
+        }
+      }
+
+
+}

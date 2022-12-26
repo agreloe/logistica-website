@@ -1,0 +1,38 @@
+@import 'Variables';
+
+footer {
+    background-color: $primaryColor;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 64px;
+
+        &__info {
+            &__icons {
+                display: flex;
+                gap: .5rem;
+            }
+        }
+        &__logo {
+            display: flex;
+            padding: .15rem 0px;
+        }
+
+        @include small-screen {
+            flex-direction: column;
+            gap: 1rem;
+            padding: 1rem 0px;
+
+            &__info {
+                flex-direction: column;
+            }
+        }
+
+    }
+
+
+
+}

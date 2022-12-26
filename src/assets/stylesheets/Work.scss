@@ -1,0 +1,13 @@
+@import 'Variables';
+
+.work {
+    background: linear-gradient(180deg, $primaryColor 60%, #fff 60%);
+
+    &__container {
+        padding: 4rem 0px;
+    }
+
+    @include small-screen {
+
+    }
+}

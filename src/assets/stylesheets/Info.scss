@@ -1,0 +1,39 @@
+@import 'Variables';
+
+.info {
+    display: grid !important;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    align-items: center;
+
+    &__img {
+        width: 75%;
+        padding: 4rem 0px;
+    }
+
+    &__rect {
+        width: 150px;
+        height: 250px;
+        position: absolute;
+        bottom: 2rem;
+        left: 2rem;
+        background-color: $primaryColor;
+        opacity: .75;
+    }
+
+    @include small-screen {
+        grid-template-columns: 1fr;
+
+        &__rect {
+            width: 90px;
+            height: 150px;
+            bottom: -1rem;
+            left: 1rem;
+        }
+
+        &__img {
+            width: 80%;
+            padding: 4rem 0px 0px;
+        }
+    }
+}
