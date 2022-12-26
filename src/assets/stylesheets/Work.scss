@@ -5,9 +5,12 @@
 
     &__container {
         padding: 4rem 0px;
-    }
 
-    @include small-screen {
-
+        &__line {
+            background-color: #fff;
+            height: 3px;
+            width: 100px;
+            margin-top: 2rem;
+        }
     }
 }

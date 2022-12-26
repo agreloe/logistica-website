@@ -36,6 +36,10 @@ const Services = () => {
         x: 50,
         ease: Power3.easeOut,
       })
+      .from(q(".services__title__line"), {
+        width: 0,
+        ease: Power3.easeOut,
+      },"-=0.25")
       .from(q(".card"), {
         opacity: 0,
         x: 50,
@@ -57,8 +61,9 @@ const Services = () => {
   return (
     <Container className='services' maxWidth="lg" ref={el}>
         <Box className='services__title'>
-            <Typography variant='h1'>We manage Logistics for World&apos;s Multinational Companies</Typography>
+            <Typography variant='h2'>We manage Logistics for World&apos;s Multinational Companies</Typography>
             <Typography variant='body2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Typography>
+            <div className="services__title__line"></div>
         </Box>
 
         <Box className='services__cards'>
@@ -66,7 +71,6 @@ const Services = () => {
             <Card title="Lorem Ipsum" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." img="https://images.unsplash.com/photo-1592838064575-70ed626d3a0e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3218&q=80" icon="https://img.icons8.com/ios/50/000000/truck--v1.png"/>
             <Card title="Lorem Ipsum" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." img="https://images.unsplash.com/photo-1592838064575-70ed626d3a0e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3218&q=80" icon="https://img.icons8.com/ios/50/000000/truck--v1.png"/>
             <Card title="Lorem Ipsum" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." img="https://images.unsplash.com/photo-1592838064575-70ed626d3a0e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3218&q=80" icon="https://img.icons8.com/ios/50/000000/truck--v1.png"/>
-
         </Box>
 
 

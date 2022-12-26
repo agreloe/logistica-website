@@ -2,7 +2,7 @@
 
 footer {
     background-color: $primaryColor;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    box-shadow: $boxShadow;
 
     .footer {
         display: flex;

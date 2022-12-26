@@ -2,7 +2,14 @@
 .services {
     &__title {
         padding: 4em 0px;
+
+        &__line {
+            background-color: $primaryColor;
+            height: 3px;
+            width: 100px;
+        }
     }
+
 
     &__cards {
         margin-bottom: 4rem;
@@ -48,6 +55,12 @@
         &__cards,
         &__title {
             grid-template-columns: 1fr;
+        }
+
+        &__title {
+            &__line {
+                grid-row: 2/3;
+            }
         }
 
         .card {

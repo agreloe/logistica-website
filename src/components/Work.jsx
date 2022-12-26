@@ -32,6 +32,10 @@ const Work = () => {
         x: 50,
         ease: Power3.easeOut,
       },)
+      .from(q(".work__container__line"),{
+        width: 0,
+        ease: Power3.easeOut,
+      },"-=0.25")
       .from(q(".caro"), {
         opacity: 0,
         x: 50,
@@ -54,6 +58,7 @@ const Work = () => {
         <Typography className="work__container__text" variant="h2" sx={{ color: "#fff" }}>
           Our highlighted work
         </Typography>
+        <div className="work__container__line"></div>
         {!matches && (
           <div className="caro">
 
