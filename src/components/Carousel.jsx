@@ -87,10 +87,11 @@ export const CarouselItem = ({img, height, width, text, brightness}) => {
 
           <div className="carousel__content">
               <button className="carousel__content__arrow" type="button" style={{opacity: showLeft ? 1 : 0}} onClick={()=>{updateIndex(activeIndex - 1);}}>&#8249;</button>
+
               {
                 text && (
                   <Container maxWidth="lg" sx={{display:"flex", justifyContent:"flex-start", flexDirection:"column", gap:"1rem", padding:"0px 1rem", color:"#fff"}}>
-                  <Typography className="title" variant="h1" gutterBottom>{text}</Typography>
+                  <Typography className="title" variant="h1">{text}</Typography>
                   <Typography className="carousel__content__body description" variant="body2" sx={{textAlign:"left"}}>{description}</Typography>
                   <Stack className="buttons" spacing={2} direction="row">
                     <PrimaryButton bgColor="hsl(19, 100%, 54%)">See more</PrimaryButton>
