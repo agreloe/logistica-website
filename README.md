@@ -1,4 +1,4 @@
 # logistica-website
 
-##Frontend design
+Frontend design
 Institutional Website
